@@ -26,7 +26,7 @@ Public Key Pair creation example:
 
 ```hcl
 module "aws_key_pair" {
-  source     = "modules/terraform-aws-keypair"
+  source     = "app.terraform.io/<ORG_NAME>/keypair/aws"
   key_name   = "rhforum-2019-key"
   public_key = "ssh-rsa ..."
 }
